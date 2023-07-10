@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const arr = ['a', 'b', 'c', 'd'];
+
+        /* let n1 = arr[0];
+        let n2 = arr[1]; */
+
+        const [a, b, c, d] = arr;
+        console.log(a);
+        console.log(b);
+
+        const [n1, n2, , n4] = arr;
+        console.log(n1);
+        console.log(n2);
+        console.log(n4);
+
+        const [k1, k2] = arr;
+        console.log(k1);
+        console.log(k2);
+
+        // 전체 복사
+        const [...x] = arr;
+        console.log(x);
+
+        const[x1,x2,...x3] = arr;
+        console.log(x1);
+        console.log(x2);
+        console.log(x3);
+
+        // const[y1, ...y2, y3] = arr; 이건안됨
+
+    
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
